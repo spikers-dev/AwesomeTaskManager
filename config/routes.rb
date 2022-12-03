@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root :to => 'web/boards#show'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  scope module: :web do
+    resource :board, only: :show
+    resource :session, only: :new
+  end
 end
