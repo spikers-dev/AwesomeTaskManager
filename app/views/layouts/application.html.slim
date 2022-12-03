@@ -16,17 +16,16 @@ html lang="en"
     = javascript_packs_with_chunks_tag 'application'
     header.mdl-layout__header
       .mdl-layout__header-row
-        .material-icons tab
+        .material-icons dataset
         label.mdl-button.mdl-js-button.mdl-button--icon
-          i.material-icons
+          i.material-icons account_circle
         span.mdl-layout-title
-          = "Task Manager"
+          = "Awesome Task Manager"
         .mdl-layout-spacer
         nav.mdl-navigation
     main#main.mdl-layout__content
       .page-content
         = yield
     footer#footer.mdl-mini-footer
-      .mdl-mini-footer__left-section
-        .mdl-logo
-          | &copy; Dualboot Learn 2022
+      .mdl-logo
+        | &copy; ShpynevDev 2022

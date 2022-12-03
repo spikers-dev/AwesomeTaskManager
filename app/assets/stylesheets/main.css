@@ -9,9 +9,16 @@ body {
 }
 
 .page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
 .page-content .mdl-textfield {
   display: block;
+}
+
+.mdl-mini-footer {
+  justify-content: center;
 }
