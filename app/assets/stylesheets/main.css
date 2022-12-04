@@ -1,7 +1,8 @@
 body {
-  min-height: 100vh;
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 #main {
@@ -9,9 +10,9 @@ body {
 }
 
 .page-content {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 20px;
 }
 
@@ -21,4 +22,24 @@ body {
 
 .mdl-mini-footer {
   justify-content: center;
+}
+
+.mdl-layout__header {
+  background-color: #3f91b5;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  box-shadow: 5px 5px 5px #d9d9d9;
+  padding: 20px;
+}
+
+.mdl-mini-footer {
+  padding: 16px;
 }

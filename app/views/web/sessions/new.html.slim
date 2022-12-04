@@ -1,7 +1,7 @@
-h3 Log in
+h3 Login
 = simple_form_for @session, url: session_path do |f|
   p
     = f.input :email
     = f.input :password
-  p
+  p.button
     = f.button  :submit, "Sign in"
