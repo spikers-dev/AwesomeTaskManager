@@ -5,3 +5,15 @@ h3 Login
     = f.input :password
   p.button
     = f.button  :submit, "Sign in"
+
+- if Rails.env.development?
+  #container
+    p 
+      | Default users:
+      ul
+        li admin@mail.com
+        li developer@mail.com
+        li manager@mail.com 
+    p Password: default
+
+  
