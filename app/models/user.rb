@@ -2,7 +2,7 @@ class User < ApplicationRecord
   has_secure_password
 
   VALID_NAME_REGEXP = /\A[A-Z](?=.{1,29}$)[A-Za-z]*(?:\h+[A-Z][A-Za-z]*)*$+\z/
-  VALID_EMAIL_REGEXP = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+  VALID_EMAIL_REGEXP = /\A[\w+\-.]+@[a-z\d-]+(\.[a-z\d-]+)*\.[a-z]+\z/i
 
   has_many :my_tasks, class_name: 'Task', foreign_key: :author_id
   has_many :assigned_tasks, class_name: 'Task', foreign_key: :assignee_id

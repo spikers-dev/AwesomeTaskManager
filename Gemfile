@@ -51,6 +51,10 @@ gem 'webpacker'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+gem 'active_model_serializers'
+gem 'kaminari'
+gem 'ransack'
+gem 'responders'
 gem 'simple_form'
 gem 'state_machines'
 gem 'state_machines-activerecord'
@@ -61,6 +65,7 @@ group :development, :test do
   gem 'debug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_bot_rails'
   gem 'rubocop'
+  gem 'faker'
 end
 
 group :development do
