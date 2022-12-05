@@ -20,7 +20,8 @@ html lang="en"
         label.mdl-button.mdl-js-button.mdl-button--icon
           - if current_user
             i.material-icons account_circle
-          i.material-icons person_off
+          - else
+            i.material-icons person_off
         span.mdl-layout-title
           = "Awesome Task Manager"
         .mdl-layout-spacer
@@ -29,6 +30,7 @@ html lang="en"
             = link_to "Board", board_path, class: 'mdl-navigation__link'
             - if current_user.is_a? Admin
               = link_to "Admin page", admin_users_url, class: 'mdl-navigation__link'
+            = current_user.first_name
             = link_to "Log out", session_path, method: "delete", confirm: "confirm?", class: 'mdl-navigation__link'
           - else
             = link_to "Login", new_session_path, class: 'mdl-navigation__link'

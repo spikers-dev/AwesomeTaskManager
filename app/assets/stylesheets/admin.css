@@ -1,0 +1,19 @@
+.mdl-grid {
+  align-items: center;
+  flex: 1 0 auto;
+  justify-content: center;
+  width: 60%;
+}
+
+form#user_search.user_search {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #3f51b5;
+}
