@@ -1,0 +1,19 @@
+#container {
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  margin-top: 20px;
+  padding: 10px 80px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul li:before
+{
+  content: '\2713';
+  margin: 0 1em;
+}
+
