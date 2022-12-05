@@ -3,7 +3,7 @@ FactoryBot.define do
     author factory: :manager
     assignee factory: :developer
     description
-    expired_at
+    # expired_at TODO
     name
     state { 'new_task' }
   end
