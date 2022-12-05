@@ -1,0 +1,11 @@
+= simple_form_for @user, as: :user, url: url do |f|
+  p
+    = f.input :first_name, :placeholder => 'John'
+    = f.input :last_name, :placeholder => 'Doe'
+    = f.input :email, :placeholder => 'user@example.com'
+    = f.input :password
+    = f.input :type, as: :select, collection: ['Admin', 'Manager', 'Developer']
+  p.button
+    = f.button :submit, "Confirm", class: 'mdl-button--colored'
+  .mdl-button--colored.button
+    => link_to "Back", admin_users_url, method: "get"
