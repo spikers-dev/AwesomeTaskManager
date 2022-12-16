@@ -52,6 +52,7 @@ gem 'webpacker'
 # gem "image_processing", "~> 1.2"
 
 gem 'active_model_serializers'
+gem 'js-routes'
 gem 'kaminari'
 gem 'ransack'
 gem 'responders'
